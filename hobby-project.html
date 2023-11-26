@@ -7,10 +7,20 @@
     <style>
       body {
         background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        padding: 15px 20px;
+        border-radius: 15px;
+        display: block;
+        margin: 50px auto;
+        background: #712906;
+        border: 1px solid #81202b;
+        color: #fbceaa;
       }
       .theme-button {
-        display: block;
-        margin: 40px auto;
+        /* display: block;
+        margin: 50px auto; */
       }
       .container {
         background: rgba(255, 255, 255, 0.6);
@@ -22,12 +32,16 @@
       h1 {
         text-align: center;
         margin-top: 40px;
+        color: #712906;
+        font-size: 64px;
       }
       h2 {
         text-align: center;
+        line-height: 1.7;
+        opacity: 0.8;
       }
       .main-picture {
-        margin-top: 40px;
+        margin-top: 30px;
         border-radius: 15px;
       }
       .grid img {
@@ -43,15 +57,22 @@
       }
       p {
         font-size: 20px;
-        line-height: 1.5;
+        line-height: 1.7;
         text-align: justify;
+        opacity: 0.8;
       }
       a {
         color: #538d26;
       }
+      .choose-button {
+        margin: 80px auto 50px;
+        padding: 20px 30px;
+        font-size: large;
+      }
       footer {
         margin-top: 60px;
         text-align: center;
+        opacity: 0.8;
       }
     </style>
   </head>
@@ -95,11 +116,11 @@
         <br />
         <br />
         📖
-        <a href="https://en.wikipedia.org/wiki/Bonsai"
-          >Read more on Wikipedia</a
+        <a href="https://en.wikipedia.org/wiki/Bonsai">
+          <small> Read more on Wikipedia</small></a
         >
       </p>
-      <button>Choose your own Bonsai</button>
+      <button class="choose-button">CHOOSE YOUR OWN BONSAI</button>
       <footer>
         This project was coded by Nataliia Opanasiuk and is
         <a href="https://github.com/NataliiaOpanasiuk/Hobby-page">
