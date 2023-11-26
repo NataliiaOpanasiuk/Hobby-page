@@ -3,8 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bonsai</title>
     <style>
+      body {
+        background: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+      }
+      .theme-button {
+        display: block;
+        margin: 40px auto;
+      }
+      .container {
+        background: rgba(255, 255, 255, 0.6);
+        width: 600px;
+        margin: 50px auto;
+        padding: 25px;
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .main-picture {
+        margin-top: 40px;
+        border-radius: 15px;
+      }
       .grid img {
         width: 100%;
         border-radius: 6px;
@@ -16,40 +41,71 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
       }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        color: #538d26;
+      }
+      footer {
+        margin-top: 60px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <h1>BONSAI</h1>
-    <h2>
-      The craft of cultivating and training miniature trees in pots, originated
-      in East Asia.
-    </h2>
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/009/original/1.jpg?1700999666"
-      alt=""
-    />
-    <div class="grid">
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>BONSAI</h1>
+      <h2>
+        The craft of cultivating and training miniature trees in pots,
+        originated in East Asia.
+      </h2>
       <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/010/original/3.jpg?1700999673"
+        class="main-picture"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/009/original/1.jpg?1700999666"
         alt=""
       />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/015/original/5.jpg?1701000534"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/011/original/4.jpg?1700999679"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/013/original/bonsai3.jpg?1700999692"
-        alt=""
-      />
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/010/original/3.jpg?1700999673"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/015/original/5.jpg?1701000534"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/011/original/4.jpg?1700999679"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/013/original/bonsai3.jpg?1700999692"
+          alt=""
+        />
+      </div>
+      <p>
+        In the ancient discipline of Feng Shui, bonsai have long been revered
+        for their capacity to attract life energy into a space and generously
+        distribute them to everyone who enters. When a bonsai is the center of
+        attention, conversation, and living forces, it may instantly provide
+        happiness and contentment to everyone who sees it.
+        <br />
+        <br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Bonsai"
+          >Read more on Wikipedia</a
+        >
+      </p>
+      <button>Choose your own Bonsai</button>
+      <footer>
+        This project was coded by Nataliia Opanasiuk and is
+        <a href="https://github.com/NataliiaOpanasiuk/Hobby-page">
+          open-sourced on GitHub</a
+        >, 2023
+      </footer>
     </div>
-    <a href="https://en.wikipedia.org/wiki/Bonsai">📖 Read more on Wikipedia</a>
-    <footer>
-      This project was coded by Nataliia Opanasiuk and is open-sourced on
-      GitHub, 2023
-    </footer>
   </body>
 </html>
