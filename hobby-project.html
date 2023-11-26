@@ -17,10 +17,13 @@
         background: #712906;
         border: 1px solid #81202b;
         color: #fbceaa;
+        border: 2px solid #270a02;
+        transition: all 150ms ease-in-out;
       }
-      .theme-button {
-        /* display: block;
-        margin: 50px auto; */
+
+      .theme-button:hover {
+        background: #270a02;
+        cursor: pointer;
       }
       .container {
         background: rgba(255, 255, 255, 0.6);
@@ -38,11 +41,16 @@
       h2 {
         text-align: center;
         line-height: 1.7;
-        opacity: 0.8;
+        opacity: 0.9;
+        color: #270a02;
       }
       .main-picture {
         margin-top: 30px;
         border-radius: 15px;
+        transition: all 150ms ease-in-out;
+      }
+      .main-picture:hover {
+        transform: scale(1.2);
       }
       .grid img {
         width: 100%;
@@ -68,9 +76,16 @@
         margin: 80px auto 50px;
         padding: 20px 30px;
         font-size: large;
+        font-weight: 500;
+      }
+      .choose-button:hover {
+        background: none;
+        font-weight: 600;
+        color: #270a02;
+        cursor: pointer;
       }
       footer {
-        margin-top: 60px;
+        margin: 60px 0 15px;
         text-align: center;
         opacity: 0.8;
       }
