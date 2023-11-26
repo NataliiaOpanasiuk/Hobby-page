@@ -182,6 +182,28 @@
 
       let button = document.querySelector(".theme-button");
       button.addEventListener("click", changeTheme);
+
+      function handleChooseButton() {
+        let answer = prompt(
+          `Do you know your favourite type of Bonsai tree? (Y/N)`
+        );
+        answer = answer.toUpperCase();
+
+        if (answer === "Y") {
+          alert(`You're so lucky!`);
+        } else {
+          if (answer === "N") {
+            alert(
+              `You can find it out at https://8billiontrees.com/trees/types-of-bonsai-trees-indoor/.`
+            );
+          } else {
+            alert(`It's so sad that you're not interesting..`);
+          }
+        }
+      }
+
+      let chooseButton = document.querySelector(".choose-button");
+      chooseButton.addEventListener("click", handleChooseButton);
     </script>
   </body>
 </html>
