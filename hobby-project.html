@@ -19,18 +19,19 @@
         display: block;
         margin: 50px auto;
         background: #712906;
-        border: 1px solid #81202b;
         color: #fbceaa;
-        border: 2px solid #270a02;
+        border: 2px solid #712906;
         transition: all 150ms ease-in-out;
       }
 
       .theme-button:hover {
         background: #270a02;
         cursor: pointer;
+        border: 2px solid #270a02;
       }
       .dark .theme-button:hover {
         background: #b67b4b;
+        border: 2px solid #b67b4b;
         color: #270a02;
         cursor: pointer;
       }
@@ -40,7 +41,7 @@
       }
       .container {
         background: rgba(255, 255, 255, 0.6);
-        width: 600px;
+        width: 700px;
         margin: 50px auto;
         padding: 25px;
         border-radius: 20px;
@@ -62,6 +63,7 @@
         color: #b67b4b;
       }
       .main-picture {
+        width: 700px;
         margin-top: 30px;
         border-radius: 15px;
         transition: all 150ms ease-in-out;
@@ -76,7 +78,7 @@
       .grid {
         margin-top: 15px;
         display: grid;
-        width: 600px;
+        width: 700px;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
       }
@@ -95,6 +97,13 @@
         font-size: large;
         font-weight: 600;
       }
+      .choose-button:hover {
+        background: none;
+        font-weight: 600;
+        color: #712906;
+        border: 2px solid #270a02;
+        cursor: pointer;
+      }
       .dark .choose-button {
         border: 2px solid #712906;
         /* color: #b67b4b; */
@@ -104,12 +113,6 @@
         font-weight: 600;
         /* border: 2px solid #b67b4b; */
         color: #b67b4b;
-        cursor: pointer;
-      }
-      .choose-button:hover {
-        background: none;
-        font-weight: 600;
-        color: #270a02;
         cursor: pointer;
       }
       footer {
@@ -171,5 +174,14 @@
         >, 2023
       </footer>
     </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let button = document.querySelector(".theme-button");
+      button.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
